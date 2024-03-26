@@ -1,14 +1,11 @@
 package demos.tasks.plugins
 
 import demos.tasks.model.Priority
-import demos.tasks.model.Task
 import demos.tasks.model.TaskRepository
 import io.ktor.http.*
-import io.ktor.serialization.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.contentnegotiation.*
-import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
@@ -54,7 +51,7 @@ fun Application.configureSerialization() {
                     call.respond(HttpStatusCode.BadRequest)
                 }
             }
-            
+
         }
     }
 }

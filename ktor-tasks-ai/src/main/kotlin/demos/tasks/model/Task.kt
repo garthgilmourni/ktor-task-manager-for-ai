@@ -2,10 +2,6 @@ package demos.tasks.model
 
 import kotlinx.serialization.Serializable
 
-enum class Priority {
-    Low, Medium, High, Vital
-}
-
 @Serializable
 data class Task(
     val name: String,
